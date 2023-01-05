@@ -1,12 +1,15 @@
 {
   "name": "kivibot-plugin-qweather",
-  "version": "1.0.0",
-  "private": true,
+  "version": "1.0.1",
+  "private": false,
   "description": "QQ 机器人框架 KiviBot 的 和风天气 插件",
   "main": "lib/index.js",
-  "repository": "KiviBotLab/kivibot-plugin-qweather",
-  "homepage": "https://github.com/KiviBotLab/kivibot-plugin-qweather#readme",
-  "author": "Sioncovy <1298184727@qq.com> (https://github.com/Sioncovy)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Sioncovy/kivibot-plugin-qweather"
+  },
+  "homepage": "https://github.com/Sioncovy/kivibot-plugin-qweather#readme",
+  "author": "Sioncovy (https://github.com/Sioncovy)",
   "scripts": {
     "dev": "tsc && (concurrently \"tsc -w\" \"tsc-alias -w\")",
     "build": "tsc && tsc-alias",
