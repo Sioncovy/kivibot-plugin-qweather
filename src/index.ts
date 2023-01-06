@@ -4,7 +4,7 @@ import { config } from './config'
 const { version } = require('../package.json')
 const plugin = new KiviPlugin('qweather', version)
 
-plugin.onMounted(() => {
+plugin.onMounted((bot) => {
   plugin.saveConfig(Object.assign(config, plugin.loadConfig()))
 
   /**
@@ -73,11 +73,11 @@ plugin.onMounted(() => {
       )
     })
     const msg = await makeForwardMsg.call(
-      plugin.bot!,
+      bot,
       weather.map((message: string) => {
         return {
-          nickname: plugin.bot?.nickname,
-          user_id: plugin.bot?.uin as number,
+          nickname: bot?.nickname,
+          user_id: bot?.uin as number,
           message,
         }
       }),

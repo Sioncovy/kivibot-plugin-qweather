@@ -1,6 +1,6 @@
 {
   "name": "kivibot-plugin-qweather",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "private": false,
   "description": "QQ 机器人框架 KiviBot 的 和风天气 插件",
   "main": "lib/index.js",
